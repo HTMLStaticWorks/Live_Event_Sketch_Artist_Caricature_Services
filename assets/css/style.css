@@ -470,6 +470,246 @@ img {
   box-shadow: var(--shadow);
 }
 
+.vs-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.vs-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 8px 8px 0px var(--accent);
+  border-color: var(--accent) !important;
+}
+
+.vs-card h3 i {
+  transition: transform 0.3s ease;
+}
+
+.vs-card:hover h3 i {
+  transform: scale(1.2) rotate(-5deg);
+}
+
+.faq-item {
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.faq-item:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent) !important;
+  box-shadow: var(--shadow);
+  background-color: var(--surface);
+}
+
+.faq-item h4 {
+  transition: color 0.3s ease;
+}
+
+.faq-item:hover h4 {
+  color: var(--accent);
+}
+
+.addon-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.addon-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent) !important;
+  box-shadow: var(--shadow);
+}
+
+.addon-card h4 {
+  transition: color 0.3s ease;
+}
+
+.addon-card:hover h4 {
+  color: var(--accent);
+}
+
+/* FAQ Accordion */
+.faq-accordion {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-details {
+  background-color: var(--bg);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-details[open] {
+  box-shadow: var(--shadow);
+}
+
+.faq-summary {
+  padding: 24px;
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.125rem;
+  transition: color 0.3s;
+}
+
+.faq-summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-summary:hover {
+  color: var(--accent);
+}
+
+.accordion-icon {
+  font-size: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-details[open] .accordion-icon {
+  transform: rotate(180deg);
+  color: var(--accent);
+}
+
+.faq-content {
+  padding: 0 24px 24px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form Card */
+.form-card {
+  background-color: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  padding: calc(var(--spacing) * 5);
+  box-shadow: var(--shadow);
+}
+
+[data-theme="dark"] .form-card {
+  background-color: #141414;
+}
+
+[data-theme="light"] .form-card {
+  background-color: #FFFFFF;
+}
+
+/* Social Icon Button */
+.social-icon-btn {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  background-color: var(--bg);
+  color: var(--text);
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icon-btn:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: var(--shadow);
+}
+
+/* Date Input Fix for Dark Theme */
+[data-theme="dark"] input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+
+/* Auth Toggles Responsive */
+.auth-toggles {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  gap: 16px;
+  z-index: 1000;
+}
+
+@media (max-width: 480px) {
+  .auth-toggles {
+    top: 15px;
+    right: 15px;
+    gap: 12px;
+  }
+  /* Push the content down to make room for full-sized icons */
+  .auth-page {
+    padding-top: 80px !important;
+    align-items: flex-start !important;
+  }
+}
+
+/* Auth Links Hover */
+.auth-link {
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.auth-link:hover {
+  text-decoration: underline !important;
+  filter: brightness(1.2);
+  transform: translateY(-1px);
+}
+
+/* Password Toggle */
+.password-wrapper {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 18px; /* Adjusted based on form-control height */
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--text-muted);
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+  z-index: 5;
+}
+
+.password-toggle:hover {
+  color: var(--accent);
+}
+
+.password-wrapper .form-control {
+  padding-right: 45px;
+}
+
 .card-icon {
   font-size: 3rem;
   color: var(--accent);
@@ -885,6 +1125,11 @@ img {
     grid-template-columns: 1fr;
   }
 
+  .digital-paper-grid,
+  .artists-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .stats-grid-h2 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -924,7 +1169,9 @@ img {
   .gallery-preview-grid,
   .packages-grid,
   .testimonials-grid,
-  .grid-3 {
+  .grid-3,
+  .digital-paper-grid,
+  .artists-grid {
     grid-template-columns: 1fr;
   }
 

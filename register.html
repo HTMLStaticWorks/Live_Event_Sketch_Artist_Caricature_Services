@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SketchRush | Register</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
   <style>
     /* Specific adjustment for register to ensure it fits on screen, but generally we want no scroll */
     @media (max-height: 800px) {
-      body { overflow: auto !important; }
-      .auth-page { padding: 40px 16px; }
+      body {
+        overflow: auto !important;
+      }
+
+      .auth-page {
+        padding: 40px 16px;
+      }
     }
   </style>
 </head>
-<body style="overflow: hidden;">
+
+<body style="overflow-x: hidden; position: relative;">
+
+  <div class="auth-toggles">
+    <button class="icon-btn theme-toggle"><i class="ph ph-moon"></i></button>
+    <button class="icon-btn rtl-toggle"><i class="ph ph-arrows-left-right"></i></button>
+  </div>
 
   <main class="auth-page">
     <div class="auth-card">
@@ -31,16 +44,26 @@
         <div class="form-group">
           <input type="email" name="email" class="form-control" placeholder="Email Address" required>
         </div>
-        <div class="form-group">
-          <input type="password" name="password" class="form-control" placeholder="Password (Min 8 chars)" required minlength="8">
+        <div class="form-group password-wrapper">
+          <input type="password" name="password" class="form-control" placeholder="Password (Min 8 chars)" required
+            minlength="8">
+          <button type="button" class="password-toggle">
+            <i class="ph ph-eye"></i>
+          </button>
         </div>
-        <div class="form-group">
-          <input type="password" name="confirm_password" class="form-control" placeholder="Confirm Password" required minlength="8">
+        <div class="form-group password-wrapper">
+          <input type="password" name="confirm_password" class="form-control" placeholder="Confirm Password" required
+            minlength="8">
+          <button type="button" class="password-toggle">
+            <i class="ph ph-eye"></i>
+          </button>
         </div>
-        
-        <div class="form-group" style="display: flex; align-items: center; gap: 8px; text-align: left; margin-bottom: 24px;">
+
+        <div class="form-group"
+          style="display: flex; align-items: center; gap: 8px; text-align: left; margin-bottom: 24px;">
           <input type="checkbox" name="terms" id="terms" required style="width: auto;">
-          <label for="terms" style="font-size: 0.875rem; color: var(--text-muted);">I accept the <a href="#" style="color: var(--accent);">Terms & Conditions</a></label>
+          <label for="terms" style="font-size: 0.875rem; color: var(--text-muted);">I accept the <a href="#" class="auth-link"
+              style="color: var(--accent);">Terms & Conditions and privacy policy</a></label>
         </div>
 
         <button type="submit" class="btn btn-primary" style="width: 100%;">Register</button>
@@ -52,15 +75,17 @@
         <i class="ph ph-google-logo" style="color: #EA4335; font-size: 1.25rem;"></i> Continue with Google
       </button>
       <button class="social-btn">
-        <i class="ph ph-envelope" style="color: var(--text); font-size: 1.25rem;"></i> Continue with Email
+        <i class="ph ph-apple-logo" style="color: var(--text); font-size: 1.25rem;"></i> Continue with Apple
       </button>
 
       <p style="margin-top: 24px; color: var(--text-muted);">
-        Already have an account? <a href="login.html" style="color: var(--accent); font-weight: 600;">Login here</a>
+        Already have an account? <a href="login.html" class="auth-link" style="color: var(--accent); font-weight: 600;">Login here</a>
       </p>
     </div>
   </main>
 
+  <script src="assets/js/main.js"></script>
   <script src="assets/js/booking.js"></script>
 </body>
+
 </html>

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SketchRush | Contact</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
@@ -16,6 +17,7 @@
       <nav class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
         <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
         <a href="services.html" class="nav-link">Services</a>
         <a href="gallery.html" class="nav-link">Gallery</a>
         <a href="packages.html" class="nav-link">Packages</a>
@@ -42,6 +44,7 @@
     <nav class="drawer-links">
       <a href="index.html" class="nav-link">Home</a>
       <a href="home2.html" class="nav-link">Home 2</a>
+      <a href="about.html" class="nav-link">About</a>
       <a href="services.html" class="nav-link">Services</a>
       <a href="gallery.html" class="nav-link">Gallery</a>
       <a href="packages.html" class="nav-link">Packages</a>
@@ -72,42 +75,9 @@
       <div class="container">
         <div class="grid grid-2">
           
-          <!-- Contact Info -->
-          <div>
-            <h2 style="margin-bottom: 24px;">Contact Details</h2>
-            <div style="display: flex; flex-direction: column; gap: 24px;">
-              <div style="display: flex; align-items: flex-start; gap: 16px;">
-                <i class="ph ph-map-pin" style="font-size: 2rem; color: var(--accent);"></i>
-                <div>
-                  <h4 style="margin-bottom: 4px;">Studio Location</h4>
-                  <p style="color: var(--text-muted);">123 Art Lane, Creative District<br>New York, NY 10001</p>
-                </div>
-              </div>
-              <div style="display: flex; align-items: flex-start; gap: 16px;">
-                <i class="ph ph-phone" style="font-size: 2rem; color: var(--accent);"></i>
-                <div>
-                  <h4 style="margin-bottom: 4px;">Phone</h4>
-                  <p style="color: var(--text-muted);">+1 (555) 123-4567</p>
-                </div>
-              </div>
-              <div style="display: flex; align-items: flex-start; gap: 16px;">
-                <i class="ph ph-envelope" style="font-size: 2rem; color: var(--accent);"></i>
-                <div>
-                  <h4 style="margin-bottom: 4px;">Email</h4>
-                  <p style="color: var(--text-muted);">hello@sketchrush.com</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Map Placeholder -->
-            <div style="margin-top: 40px; border: 2px solid var(--border); border-radius: var(--radius); overflow: hidden;">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968459391!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c64a7ae1%3A0x12d098e9fc7e6f85!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1621285265431!5m2!1sen!2sus" width="100%" height="300" style="border:0; display: block;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-          </div>
-
           <!-- Contact Form -->
-          <div style="background: var(--surface); padding: 32px; border: 2px solid var(--border); border-radius: var(--radius);">
-            <h2 style="margin-bottom: 24px;">Send a Message</h2>
+          <div class="form-card">
+            <h2 style="margin-bottom: 24px; text-align: center;">Send a Message</h2>
             <form action="https://formspree.io/f/placeholder" method="POST" novalidate>
               <div class="form-group">
                 <label class="form-label">Name *</label>
@@ -120,8 +90,16 @@
                 <div class="error-message">Valid email is required.</div>
               </div>
               <div class="form-group">
+                <label class="form-label">Phone Number</label>
+                <input type="tel" name="phone" class="form-control">
+              </div>
+              <div class="form-group">
                 <label class="form-label">Event Type</label>
                 <input type="text" name="event_type" class="form-control">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Event Date</label>
+                <input type="date" name="event_date" class="form-control">
               </div>
               <div class="form-group">
                 <label class="form-label">Message *</label>
@@ -130,6 +108,50 @@
               </div>
               <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
             </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div style="text-align: center;">
+            <h2 style="margin-bottom: 24px;">Contact Details</h2>
+            <div style="display: flex; flex-direction: column; gap: 32px; align-items: center;">
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+                <i class="ph ph-map-pin" style="font-size: 2.5rem; color: var(--accent);"></i>
+                <div>
+                  <h4 style="margin-bottom: 4px;">Studio Location</h4>
+                  <p style="color: var(--text-muted);">123 Art Lane, Creative District<br>New York, NY 10001</p>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+                <i class="ph ph-phone" style="font-size: 2.5rem; color: var(--accent);"></i>
+                <div>
+                  <h4 style="margin-bottom: 4px;">Phone</h4>
+                  <p style="color: var(--text-muted);">+1 (555) 123-4567</p>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+                <i class="ph ph-envelope" style="font-size: 2.5rem; color: var(--accent);"></i>
+                <div>
+                  <h4 style="margin-bottom: 4px;">Email</h4>
+                  <p style="color: var(--text-muted);">hello@sketchrush.com</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Follow Us -->
+            <div style="margin-top: 40px; display: flex; flex-direction: column; align-items: center;">
+              <h4 style="margin-bottom: 16px;">Follow Us</h4>
+              <div style="display: flex; gap: 16px; justify-content: center;">
+                <a href="#" class="social-icon-btn"><i class="ph ph-instagram-logo"></i></a>
+                <a href="#" class="social-icon-btn"><i class="ph ph-facebook-logo"></i></a>
+                <a href="#" class="social-icon-btn"><i class="ph ph-linkedin-logo"></i></a>
+                <a href="#" class="social-icon-btn"><i class="ph ph-youtube-logo"></i></a>
+              </div>
+            </div>
+
+            <!-- Map Placeholder -->
+            <div style="margin-top: 48px; border: 2px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow);">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968459391!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c64a7ae1%3A0x12d098e9fc7e6f85!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1621285265431!5m2!1sen!2sus" width="100%" height="300" style="border:0; display: block;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
           </div>
 
         </div>

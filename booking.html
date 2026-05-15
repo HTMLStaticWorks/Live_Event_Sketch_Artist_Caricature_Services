@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SketchRush | Book Now</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
 </head>
+
 <body>
   <!-- Navbar -->
   <header class="navbar">
@@ -16,6 +19,7 @@
       <nav class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
         <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
         <a href="services.html" class="nav-link">Services</a>
         <a href="gallery.html" class="nav-link">Gallery</a>
         <a href="packages.html" class="nav-link">Packages</a>
@@ -42,6 +46,7 @@
     <nav class="drawer-links">
       <a href="index.html" class="nav-link">Home</a>
       <a href="home2.html" class="nav-link">Home 2</a>
+      <a href="about.html" class="nav-link">About</a>
       <a href="services.html" class="nav-link">Services</a>
       <a href="gallery.html" class="nav-link">Gallery</a>
       <a href="packages.html" class="nav-link">Packages</a>
@@ -67,89 +72,163 @@
       </div>
     </section>
 
+
+
+    <!-- Artists Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Choose Your Artist</h2>
+          <p class="section-subtitle">Each artist brings a unique style. Pick the one that fits your event vibe.</p>
+        </div>
+        <div class="grid grid-2 artists-grid">
+          <!-- Artist 1 -->
+          <div class="card" style="padding: 0; overflow: hidden;">
+            <img src="assets/images/artist-1.jpg" alt="Artist Alex Rush"
+              style="width: 100%; aspect-ratio: 4/3; object-fit: cover;">
+            <div style="padding: 24px; display: flex; flex-direction: column; flex: 1;">
+              <h3 class="card-title">Alex Rush</h3>
+              <p style="color: var(--accent); font-weight: 600; margin-bottom: 12px;">Digital & Paper Specialist</p>
+              <p class="card-desc">Alex brings 10+ years of live event experience with a bold, expressive style. Known
+                for fast, accurate likenesses that guests instantly love.</p>
+              <div style="display: flex; gap: 16px; margin: 16px 0; flex-wrap: wrap;">
+                <span
+                  style="border: 2px solid var(--border); border-radius: var(--radius); padding: 4px 12px; font-size: 0.875rem;">Digital</span>
+                <span
+                  style="border: 2px solid var(--border); border-radius: var(--radius); padding: 4px 12px; font-size: 0.875rem;">Paper</span>
+                <span
+                  style="border: 2px solid var(--border); border-radius: var(--radius); padding: 4px 12px; font-size: 0.875rem;">Caricature</span>
+              </div>
+              <div
+                style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px; color: var(--text-muted); font-size: 0.875rem;">
+                <i class="ph ph-star-fill" style="color: var(--accent);"></i>
+                <span>4.9 · 320+ events</span>
+              </div>
+              <a href="#bookingForm" class="btn btn-primary" style="width: 100%; margin-top: auto;">Book Alex</a>
+            </div>
+          </div>
+          <!-- Artist 2 -->
+          <div class="card" style="padding: 0; overflow: hidden;">
+            <img src="assets/images/artist-2.jpg" alt="Artist Jamie Sketch"
+              style="width: 100%; aspect-ratio: 4/3; object-fit: cover;">
+            <div style="padding: 24px; display: flex; flex-direction: column; flex: 1;">
+              <h3 class="card-title">Jamie Sketch</h3>
+              <p style="color: var(--accent); font-weight: 600; margin-bottom: 12px;">Portrait & Watercolor Specialist
+              </p>
+              <p class="card-desc">Jamie specializes in delicate, detailed portraits with a fine art touch. A favourite
+                for weddings and intimate gatherings where elegance matters.</p>
+              <div style="display: flex; gap: 16px; margin: 16px 0; flex-wrap: wrap;">
+                <span
+                  style="border: 2px solid var(--border); border-radius: var(--radius); padding: 4px 12px; font-size: 0.875rem;">Portraits</span>
+                <span
+                  style="border: 2px solid var(--border); border-radius: var(--radius); padding: 4px 12px; font-size: 0.875rem;">Watercolor</span>
+                <span
+                  style="border: 2px solid var(--border); border-radius: var(--radius); padding: 4px 12px; font-size: 0.875rem;">Weddings</span>
+              </div>
+              <div
+                style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px; color: var(--text-muted); font-size: 0.875rem;">
+                <i class="ph ph-star-fill" style="color: var(--accent);"></i>
+                <span>4.8 · 210+ events</span>
+              </div>
+              <a href="#bookingForm" class="btn btn-primary" style="width: 100%; margin-top: auto;">Book Jamie</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
     <!-- Booking Form -->
     <section class="section">
       <div class="container" style="max-width: 800px;">
-        <form action="https://formspree.io/f/placeholder" method="POST" id="bookingForm" novalidate>
-          
-          <div class="grid grid-2">
+        <div class="form-card">
+          <form action="https://formspree.io/f/placeholder" method="POST" id="bookingForm" novalidate>
+
+            <div class="grid grid-2">
+              <div class="form-group">
+                <label class="form-label">Full Name *</label>
+                <input type="text" name="name" class="form-control" required>
+                <div class="error-message">This field is required.</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email Address *</label>
+                <input type="email" name="email" class="form-control" required>
+                <div class="error-message">Please enter a valid email.</div>
+              </div>
+            </div>
+
+            <div class="grid grid-2">
+              <div class="form-group">
+                <label class="form-label">Phone Number</label>
+                <input type="tel" name="phone" class="form-control">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Event Date *</label>
+                <input type="date" name="date" class="form-control" required>
+                <div class="error-message">Please select a date.</div>
+              </div>
+            </div>
+
+            <div class="grid grid-2">
+              <div class="form-group">
+                <label class="form-label">Event Location / City *</label>
+                <input type="text" name="location" class="form-control" required>
+                <div class="error-message">Location is required.</div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Estimated Guest Count</label>
+                <input type="number" name="guests" class="form-control" min="1">
+              </div>
+            </div>
+
             <div class="form-group">
-              <label class="form-label">Full Name *</label>
-              <input type="text" name="name" class="form-control" required>
-              <div class="error-message">This field is required.</div>
+              <label class="form-label">Event Type *</label>
+              <select name="event_type" class="form-control" required>
+                <option value="">Select Event Type</option>
+                <option value="Wedding">Wedding</option>
+                <option value="Corporate">Corporate</option>
+                <option value="Birthday">Birthday Party</option>
+                <option value="Festival">Festival</option>
+                <option value="Other">Other</option>
+              </select>
+              <div class="error-message">Please select an event type.</div>
             </div>
+
             <div class="form-group">
-              <label class="form-label">Email Address *</label>
-              <input type="email" name="email" class="form-control" required>
-              <div class="error-message">Please enter a valid email.</div>
+              <label class="form-label" style="margin-bottom: 16px;">Package Selection *</label>
+              <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+                <label style="display: flex; align-items: center; gap: 8px;"><input type="radio" name="package"
+                    value="Starter" required> Starter (2hr)</label>
+                <label style="display: flex; align-items: center; gap: 8px;"><input type="radio" name="package"
+                    value="Classic"> Classic (4hr)</label>
+                <label style="display: flex; align-items: center; gap: 8px;"><input type="radio" name="package"
+                    value="Premium"> Premium (Full Day)</label>
+              </div>
             </div>
-          </div>
 
-          <div class="grid grid-2">
-            <div class="form-group">
-              <label class="form-label">Phone Number</label>
-              <input type="tel" name="phone" class="form-control">
+            <div class="form-group" style="margin-top: 24px;">
+              <label class="form-label" style="margin-bottom: 16px;">Medium Preference *</label>
+              <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+                <label style="display: flex; align-items: center; gap: 8px;"><input type="radio" name="medium"
+                    value="Digital" required> Digital Sketching</label>
+                <label style="display: flex; align-items: center; gap: 8px;"><input type="radio" name="medium"
+                    value="Paper"> Paper/Traditional</label>
+                <label style="display: flex; align-items: center; gap: 8px;"><input type="radio" name="medium"
+                    value="Both"> Both</label>
+              </div>
             </div>
-            <div class="form-group">
-              <label class="form-label">Event Date *</label>
-              <input type="date" name="date" class="form-control" required>
-              <div class="error-message">Please select a date.</div>
+
+            <div class="form-group" style="margin-top: 24px;">
+              <label class="form-label">Special Requests / Details</label>
+              <textarea name="message" class="form-control" rows="5"></textarea>
             </div>
-          </div>
 
-          <div class="grid grid-2">
-            <div class="form-group">
-              <label class="form-label">Event Location / City *</label>
-              <input type="text" name="location" class="form-control" required>
-              <div class="error-message">Location is required.</div>
-            </div>
-            <div class="form-group">
-              <label class="form-label">Estimated Guest Count</label>
-              <input type="number" name="guests" class="form-control" min="1">
-            </div>
-          </div>
+            <!-- CALENDLY_EMBED -->
 
-          <div class="form-group">
-            <label class="form-label">Event Type *</label>
-            <select name="event_type" class="form-control" required>
-              <option value="">Select Event Type</option>
-              <option value="Wedding">Wedding</option>
-              <option value="Corporate">Corporate</option>
-              <option value="Birthday">Birthday Party</option>
-              <option value="Festival">Festival</option>
-              <option value="Other">Other</option>
-            </select>
-            <div class="error-message">Please select an event type.</div>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" style="margin-bottom: 16px;">Package Selection *</label>
-            <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-              <label style="display: flex; align-items: center; gap: 8px;"><input type="radio" name="package" value="Starter" required> Starter (2hr)</label>
-              <label style="display: flex; align-items: center; gap: 8px;"><input type="radio" name="package" value="Classic"> Classic (4hr)</label>
-              <label style="display: flex; align-items: center; gap: 8px;"><input type="radio" name="package" value="Premium"> Premium (Full Day)</label>
-              <label style="display: flex; align-items: center; gap: 8px;"><input type="radio" name="package" value="Corporate"> Corporate Bundle</label>
-            </div>
-          </div>
-
-          <div class="form-group" style="margin-top: 24px;">
-            <label class="form-label" style="margin-bottom: 16px;">Medium Preference *</label>
-            <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-              <label style="display: flex; align-items: center; gap: 8px;"><input type="radio" name="medium" value="Digital" required> Digital Sketching</label>
-              <label style="display: flex; align-items: center; gap: 8px;"><input type="radio" name="medium" value="Paper"> Paper/Traditional</label>
-              <label style="display: flex; align-items: center; gap: 8px;"><input type="radio" name="medium" value="Both"> Both</label>
-            </div>
-          </div>
-
-          <div class="form-group" style="margin-top: 24px;">
-            <label class="form-label">Special Requests / Details</label>
-            <textarea name="message" class="form-control" rows="5"></textarea>
-          </div>
-
-          <!-- CALENDLY_EMBED -->
-          
-          <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Booking Request</button>
-        </form>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Booking Request</button>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -160,7 +239,8 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <a href="index.html" class="logo" style="color: #F5F0E8;"><i class="ph ph-pen-nib logo-icon"></i> SketchRush</a>
+          <a href="index.html" class="logo" style="color: #F5F0E8;"><i class="ph ph-pen-nib logo-icon"></i>
+            SketchRush</a>
           <p style="color: #AAAAAA; margin-top: 16px;">Turning moments into lasting art.</p>
         </div>
         <div>
@@ -197,4 +277,5 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/booking.js"></script>
 </body>
+
 </html>

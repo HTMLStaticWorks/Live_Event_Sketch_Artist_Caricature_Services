@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SketchRush | Gallery</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
 </head>
+
 <body>
   <!-- Navbar -->
   <header class="navbar">
@@ -16,6 +19,7 @@
       <nav class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
         <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
         <a href="services.html" class="nav-link">Services</a>
         <a href="gallery.html" class="nav-link active">Gallery</a>
         <a href="packages.html" class="nav-link">Packages</a>
@@ -42,6 +46,7 @@
     <nav class="drawer-links">
       <a href="index.html" class="nav-link">Home</a>
       <a href="home2.html" class="nav-link">Home 2</a>
+      <a href="about.html" class="nav-link">About</a>
       <a href="services.html" class="nav-link">Services</a>
       <a href="gallery.html" class="nav-link active">Gallery</a>
       <a href="packages.html" class="nav-link">Packages</a>
@@ -82,38 +87,93 @@
         <div class="gallery-grid">
           <!-- Item 1 -->
           <div class="gallery-item" data-category="weddings">
-            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80" alt="Wedding Couple Sketch" class="gallery-img">
-            <div class="gallery-overlay"><h4>Wedding Portrait</h4><p>Digital</p></div>
+            <img src="assets/images/gallery-wedding-portrait.jpg" alt="Wedding Couple Sketch" class="gallery-img">
+            <div class="gallery-overlay">
+              <h4>Wedding Portrait</h4>
+              <p>Digital</p>
+            </div>
           </div>
           <!-- Item 2 -->
           <div class="gallery-item" data-category="corporate">
-            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80" alt="Corporate Event Sketch" class="gallery-img">
-            <div class="gallery-overlay"><h4>Corporate Event</h4><p>Paper</p></div>
+            <img src="assets/images/gallery-corporate-event.jpg" alt="Corporate Event Sketch" class="gallery-img">
+            <div class="gallery-overlay">
+              <h4>Corporate Event</h4>
+              <p>Paper</p>
+            </div>
           </div>
           <!-- Item 3 -->
           <div class="gallery-item" data-category="weddings">
-            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80" alt="Wedding Group Sketch" class="gallery-img">
-            <div class="gallery-overlay"><h4>Wedding Party</h4><p>Digital</p></div>
+            <img src="assets/images/gallery-wedding-party.jpg" alt="Wedding Group Sketch" class="gallery-img">
+            <div class="gallery-overlay">
+              <h4>Wedding Party</h4>
+              <p>Digital</p>
+            </div>
           </div>
           <!-- Item 4 -->
           <div class="gallery-item" data-category="parties">
-            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=80" alt="Party Sketch" class="gallery-img">
-            <div class="gallery-overlay"><h4>Birthday Party</h4><p>Paper</p></div>
+            <img src="assets/images/gallery-birthday-party.jpg" alt="Party Sketch" class="gallery-img">
+            <div class="gallery-overlay">
+              <h4>Birthday Party</h4>
+              <p>Paper</p>
+            </div>
           </div>
           <!-- Item 5 -->
           <div class="gallery-item" data-category="festivals">
-            <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=600&q=80" alt="Festival Sketch" class="gallery-img">
-            <div class="gallery-overlay"><h4>Music Festival</h4><p>Digital</p></div>
+            <img src="assets/images/gallery-music-festival.jpg" alt="Festival Sketch" class="gallery-img">
+            <div class="gallery-overlay">
+              <h4>Music Festival</h4>
+              <p>Digital</p>
+            </div>
           </div>
           <!-- Item 6 -->
           <div class="gallery-item" data-category="caricatures">
-            <img src="https://images.unsplash.com/photo-1525926477800-7a3afafbeaf4?auto=format&fit=crop&w=600&q=80" alt="Caricature" class="gallery-img">
-            <div class="gallery-overlay"><h4>Funny Caricature</h4><p>Paper</p></div>
+            <img src="assets/images/gallery-caricature.jpg" alt="Caricature" class="gallery-img">
+            <div class="gallery-overlay">
+              <h4>Funny Caricature</h4>
+              <p>Paper</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="section" style="background-color: var(--surface);">
+      <div class="container">
+        <h2 class="section-title text-center">Gallery FAQ</h2>
+        <div class="faq-accordion mt-4">
+          <details class="faq-details">
+            <summary class="faq-summary">
+              Do you provide the original sketches?
+              <i class="ph ph-caret-down accordion-icon"></i>
+            </summary>
+            <div class="faq-content">
+              <p>Yes! For paper sketches, guests take home the original physical artwork in a protective sleeve. For digital sketches, we send high-resolution files via email or QR code instantly.</p>
+            </div>
+          </details>
+
+          <details class="faq-details">
+            <summary class="faq-summary">
+              Can you draw more than one person in a sketch?
+              <i class="ph ph-caret-down accordion-icon"></i>
+            </summary>
+            <div class="faq-content">
+              <p>Absolutely. We often draw couples, families, or small groups of friends together. It's a great way to capture a shared memory from your event.</p>
+            </div>
+          </details>
+
+          <details class="faq-details">
+            <summary class="faq-summary">
+              What equipment do you bring?
+              <i class="ph ph-caret-down accordion-icon"></i>
+            </summary>
+            <div class="faq-content">
+              <p>We are fully self-sufficient. We bring our own professional lighting, drawing boards, and all necessary art supplies. All we typically need from the venue is a small footprint (approx. 5x5 ft) and access to a power outlet for digital setups.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
@@ -121,7 +181,8 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <a href="index.html" class="logo" style="color: #F5F0E8;"><i class="ph ph-pen-nib logo-icon"></i> SketchRush</a>
+          <a href="index.html" class="logo" style="color: #F5F0E8;"><i class="ph ph-pen-nib logo-icon"></i>
+            SketchRush</a>
           <p style="color: #AAAAAA; margin-top: 16px;">Turning moments into lasting art.</p>
         </div>
         <div>
@@ -163,4 +224,5 @@
 
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>

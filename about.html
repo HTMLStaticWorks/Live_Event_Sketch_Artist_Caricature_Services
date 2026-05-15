@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SketchRush | About</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
 </head>
+
 <body>
   <!-- Navbar -->
   <header class="navbar">
@@ -16,6 +19,7 @@
       <nav class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
         <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link active">About</a>
         <a href="services.html" class="nav-link">Services</a>
         <a href="gallery.html" class="nav-link">Gallery</a>
         <a href="packages.html" class="nav-link">Packages</a>
@@ -42,6 +46,7 @@
     <nav class="drawer-links">
       <a href="index.html" class="nav-link">Home</a>
       <a href="home2.html" class="nav-link">Home 2</a>
+      <a href="about.html" class="nav-link active">About</a>
       <a href="services.html" class="nav-link">Services</a>
       <a href="gallery.html" class="nav-link">Gallery</a>
       <a href="packages.html" class="nav-link">Packages</a>
@@ -67,22 +72,135 @@
       </div>
     </section>
 
+    <style>
+      .stat-card {
+        border: 2px solid var(--border);
+        padding: 16px;
+        border-radius: var(--radius);
+        text-align: center;
+        background: var(--surface);
+        transition: all 0.3s ease;
+        cursor: default;
+      }
+
+      .stat-card h3 {
+        font-size: 2rem;
+        color: var(--accent);
+        margin-bottom: 4px;
+        transition: color 0.3s ease;
+      }
+
+      .stat-card p {
+        color: var(--text-muted);
+        margin: 0;
+        transition: color 0.3s ease;
+      }
+
+      .stat-card:hover {
+        transform: translate(-4px, -4px);
+        box-shadow: var(--shadow);
+        background: var(--accent);
+      }
+
+      .stat-card:hover h3,
+      .stat-card:hover p {
+        color: #fff !important;
+      }
+
+      @media (max-width: 768px) {
+        .founder-grid {
+          display: flex !important;
+          flex-direction: column-reverse;
+          gap: 40px;
+        }
+
+        .stats-grid-about {
+          grid-template-columns: repeat(2, 1fr) !important;
+        }
+      }
+
+      @media (max-width: 360px) {
+        .stats-grid-about {
+          grid-template-columns: 1fr !important;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .milestones-grid {
+          grid-template-columns: repeat(2, 1fr) !important;
+        }
+
+        .milestones-grid>*:last-child:nth-child(3) {
+          grid-column: span 2;
+          justify-self: center;
+          width: 100%;
+          max-width: calc(50% - 15px);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .milestones-grid {
+          grid-template-columns: 1fr !important;
+        }
+
+        .milestones-grid>*:last-child:nth-child(3) {
+          grid-column: auto;
+          max-width: 100%;
+        }
+      }
+
+      .milestone-card {
+        background: var(--bg);
+        border: 2px solid var(--border);
+        border-radius: var(--radius);
+        padding: 32px;
+        box-shadow: var(--shadow);
+        transition: all 0.3s ease;
+        text-align: center;
+      }
+
+      .milestone-card:hover {
+        transform: translate(-4px, -4px);
+        box-shadow: 8px 8px 0px var(--accent);
+        border-color: var(--accent);
+      }
+
+      .milestone-year {
+        font-size: 3rem;
+        color: var(--accent);
+        font-family: var(--font-head);
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+
+      .milestone-icon {
+        font-size: 2rem;
+        color: var(--accent);
+        margin-bottom: 16px;
+        display: block;
+      }
+    </style>
+    <!-- meet the founder -->
     <section class="section">
       <div class="container">
-        <div class="grid grid-2" style="align-items: center;">
+        <div class="grid grid-2 founder-grid" style="align-items: center;">
           <div>
-            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=800&q=80" alt="Artist at work" style="border-radius: var(--radius); border: 2px solid var(--border); box-shadow: var(--shadow);">
+            <img src="assets/images/about-founder.jpg" alt="Artist at work"
+              style="border-radius: var(--radius); border: 2px solid var(--border); box-shadow: var(--shadow);">
           </div>
-          <div>
+          <div style="text-align: center;">
             <h2>Meet the Founder</h2>
-            <p style="color: var(--text-muted); margin-bottom: 24px;">SketchRush was founded with a simple idea: event entertainment shouldn't just be fun in the moment—it should leave you with a physical memory. With over a decade of experience, we've sketched thousands of faces, traveled across the country, and turned countless blank pages into masterpieces.</p>
-            <div class="grid grid-2">
-              <div style="border: 2px solid var(--border); padding: 16px; border-radius: var(--radius); text-align: center; background: var(--surface);">
-                <h3 style="font-size: 2rem; color: var(--accent);">3 Min</h3>
+            <p style="color: var(--text-muted); margin-bottom: 24px;">SketchRush was founded with a simple idea: event
+              entertainment shouldn't just be fun in the moment—it should leave you with a physical memory. With over a
+              decade of experience, we've sketched thousands of faces, traveled across the country, and turned countless
+              blank pages into masterpieces.</p>
+            <div class="grid grid-2 stats-grid-about">
+              <div class="stat-card">
+                <h3>3 Min</h3>
                 <p>Avg Sketch Time</p>
               </div>
-              <div style="border: 2px solid var(--border); padding: 16px; border-radius: var(--radius); text-align: center; background: var(--surface);">
-                <h3 style="font-size: 2rem; color: var(--accent);">10k+</h3>
+              <div class="stat-card">
+                <h3>10k+</h3>
                 <p>Portraits Drawn</p>
               </div>
             </div>
@@ -91,22 +209,51 @@
       </div>
     </section>
 
-    <!-- Timeline -->
+    <!-- Milestones -->
     <section class="section" style="background-color: var(--surface);">
       <div class="container text-center">
         <h2 class="section-title">Milestones</h2>
-        <div class="grid grid-3 mt-4" style="text-align: left;">
-          <div style="padding: 24px; border-left: 4px solid var(--accent);">
-            <h3>2010</h3>
+        <div class="grid grid-3 mt-4 milestones-grid">
+          <div class="milestone-card">
+            <div class="milestone-year">2010</div>
+            <i class="ph ph-flag-banner milestone-icon"></i>
+            <h4 style="margin-bottom: 8px;">The First Gig</h4>
             <p style="color: var(--text-muted);">First gig at a local festival. Only had 2 markers and a dream.</p>
           </div>
-          <div style="padding: 24px; border-left: 4px solid var(--accent);">
-            <h3>2015</h3>
+          <div class="milestone-card">
+            <div class="milestone-year">2015</div>
+            <i class="ph ph-users milestone-icon"></i>
+            <h4 style="margin-bottom: 8px;">Team Expands</h4>
             <p style="color: var(--text-muted);">Hit 1,000 events covered and expanded the artist team.</p>
           </div>
-          <div style="padding: 24px; border-left: 4px solid var(--accent);">
-            <h3>2022</h3>
+          <div class="milestone-card">
+            <div class="milestone-year">2022</div>
+            <i class="ph ph-device-tablet milestone-icon"></i>
+            <h4 style="margin-bottom: 8px;">Goes Digital</h4>
             <p style="color: var(--text-muted);">Launched our fully digital live iPad sketching service.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background-color: var(--surface);">
+      <div class="container">
+        <div class="grid grid-2" style="align-items: center; gap: 48px;">
+          <div style="text-align: center;">
+            <div
+              style="color: var(--accent); font-weight: 600; margin-bottom: 12px; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 2px;">
+              Behind the Studio</div>
+            <h2 style="margin-bottom: 16px;">Where Every Sketch Begins</h2>
+            <p style="color: var(--text-muted); margin-bottom: 16px;">Before every event, our artists prep their tools,
+              study the brief, and warm up their hands. It's a ritual that ensures every guest gets the best possible
+              portrait.</p>
+            <p style="color: var(--text-muted); margin-bottom: 24px;">From the ink we choose to the paper we use — every
+              detail is deliberate. We obsess over the craft so your guests don't have to think about it.</p>
+            <a href="gallery.html" class="btn btn-outline">See the Work</a>
+          </div>
+          <div>
+            <img src="assets/images/about-studio.jpg" alt="Artist studio setup"
+              style="border-radius: var(--radius); border: 2px solid var(--border); box-shadow: var(--shadow); width: 100%;">
           </div>
         </div>
       </div>
@@ -118,7 +265,8 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <a href="index.html" class="logo" style="color: #F5F0E8;"><i class="ph ph-pen-nib logo-icon"></i> SketchRush</a>
+          <a href="index.html" class="logo" style="color: #F5F0E8;"><i class="ph ph-pen-nib logo-icon"></i>
+            SketchRush</a>
           <p style="color: #AAAAAA; margin-top: 16px;">Turning moments into lasting art.</p>
         </div>
         <div>
@@ -154,4 +302,5 @@
 
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>

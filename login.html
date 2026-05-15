@@ -4,11 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SketchRush | Login</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
 </head>
-<body style="overflow: hidden;">
+<body style="overflow-x: hidden; position: relative;">
+
+  <div class="auth-toggles">
+    <button class="icon-btn theme-toggle"><i class="ph ph-moon"></i></button>
+    <button class="icon-btn rtl-toggle"><i class="ph ph-arrows-left-right"></i></button>
+  </div>
 
   <!-- No theme toggle, centered layout, no scroll -->
   <main class="auth-page">
@@ -24,9 +30,19 @@
           <input type="email" name="email" class="form-control" placeholder="Email Address" required>
           <div class="error-message">Valid email is required.</div>
         </div>
-        <div class="form-group">
+        <div class="form-group password-wrapper">
           <input type="password" name="password" class="form-control" placeholder="Password" required>
+          <button type="button" class="password-toggle">
+            <i class="ph ph-eye"></i>
+          </button>
           <div class="error-message">Password is required.</div>
+        </div>
+
+        <div class="form-group" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+          <label style="display: flex; align-items: center; gap: 8px; font-size: 0.875rem; cursor: pointer;">
+            <input type="checkbox" name="remember" style="width: auto;"> Remember Me
+          </label>
+          <a href="#" class="auth-link" style="color: var(--accent); font-size: 0.875rem; font-weight: 500;">Forgot Password?</a>
         </div>
         <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
       </form>
@@ -37,15 +53,16 @@
         <i class="ph ph-google-logo" style="color: #EA4335; font-size: 1.25rem;"></i> Continue with Google
       </button>
       <button class="social-btn">
-        <i class="ph ph-envelope" style="color: var(--text); font-size: 1.25rem;"></i> Continue with Email
+        <i class="ph ph-apple-logo" style="color: var(--text); font-size: 1.25rem;"></i> Continue with Apple
       </button>
 
       <p style="margin-top: 24px; color: var(--text-muted);">
-        Don't have an account? <a href="register.html" style="color: var(--accent); font-weight: 600;">Register here</a>
+        Don't have an account? <a href="register.html" class="auth-link" style="color: var(--accent); font-weight: 600;">Register here</a>
       </p>
     </div>
   </main>
 
+  <script src="assets/js/main.js"></script>
   <script src="assets/js/booking.js"></script>
 </body>
 </html>

@@ -1,0 +1,57 @@
+<svg width="560" height="120" viewBox="0 0 560 120" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>SketchRush Logo</title>
+  <desc>SketchRush horizontal logo lockup with pen nib icon and wordmark in saffron orange</desc>
+
+  <!-- === PEN NIB ICON (shorter, tighter) === -->
+  <g transform="translate(18, 16) scale(0.62)">
+
+    <!-- Speed dash lines -->
+    <line x1="18" y1="50" x2="2"  y2="50" stroke="#E8420A" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="18" y1="62" x2="0"  y2="62" stroke="#E8420A" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="18" y1="74" x2="4"  y2="74" stroke="#E8420A" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Ink barrel / cap top -->
+    <rect x="30" y="8" width="28" height="16" rx="4" fill="#E8420A"/>
+
+    <!-- Nib body -->
+    <polygon points="44,8 64,72 44,100 24,72" fill="#E8420A"/>
+
+    <!-- Center slit -->
+    <rect x="42" y="32" width="4" height="52" rx="1.5" fill="white" opacity="0.85"/>
+
+    <!-- Tip vent hole -->
+    <polygon points="34,78 44,100 54,78" fill="white" opacity="0.85"/>
+
+    <!-- Gesture line curling off tip -->
+    <path d="M44,102 C52,112 76,108 90,94 C104,80 100,60 118,52"
+          fill="none" stroke="#E8420A" stroke-width="4"
+          stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Ink drop dot -->
+    <circle cx="120" cy="51" r="3.5" fill="#E8420A"/>
+
+  </g>
+
+  <!-- === WORDMARK (pulled closer to icon) === -->
+  <text
+    x="118"
+    y="82"
+    font-family="'Playfair Display', Georgia, 'Times New Roman', serif"
+    font-size="58"
+    font-weight="700"
+    fill="#E8420A"
+    letter-spacing="-1.5"
+  >Sketch</text>
+
+  <text
+    x="310"
+    y="82"
+    font-family="'Playfair Display', Georgia, 'Times New Roman', serif"
+    font-size="58"
+    font-weight="700"
+    font-style="italic"
+    fill="#E8420A"
+    letter-spacing="-1"
+  >Rush</text>
+
+</svg>

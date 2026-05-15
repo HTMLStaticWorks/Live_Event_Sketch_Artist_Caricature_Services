@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SketchRush | Packages</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
 </head>
+
 <body>
   <!-- Navbar -->
   <header class="navbar">
@@ -16,6 +19,7 @@
       <nav class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
         <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
         <a href="services.html" class="nav-link">Services</a>
         <a href="gallery.html" class="nav-link">Gallery</a>
         <a href="packages.html" class="nav-link active">Packages</a>
@@ -42,6 +46,7 @@
     <nav class="drawer-links">
       <a href="index.html" class="nav-link">Home</a>
       <a href="home2.html" class="nav-link">Home 2</a>
+      <a href="about.html" class="nav-link">About</a>
       <a href="services.html" class="nav-link">Services</a>
       <a href="gallery.html" class="nav-link">Gallery</a>
       <a href="packages.html" class="nav-link active">Packages</a>
@@ -70,7 +75,7 @@
     <!-- Packages Grid -->
     <section class="section">
       <div class="container">
-        <div class="grid grid-4">
+        <div class="grid grid-3 packages-grid">
           <div class="package-card">
             <h3>Starter</h3>
             <p style="color: var(--text-muted); margin-top: 8px;">For small gatherings.</p>
@@ -83,7 +88,7 @@
             </ul>
             <a href="booking.html" class="btn btn-outline">Select Starter</a>
           </div>
-          
+
           <div class="package-card popular">
             <div class="popular-badge">Most Popular</div>
             <h3>Classic</h3>
@@ -98,7 +103,7 @@
             </ul>
             <a href="booking.html" class="btn btn-primary">Select Classic</a>
           </div>
-          
+
           <div class="package-card">
             <h3>Premium</h3>
             <p style="color: var(--text-muted); margin-top: 8px;">The ultimate experience.</p>
@@ -113,18 +118,6 @@
             <a href="booking.html" class="btn btn-outline">Select Premium</a>
           </div>
 
-          <div class="package-card" style="border-style: dashed;">
-            <h3>Corporate Bundle</h3>
-            <p style="color: var(--text-muted); margin-top: 8px;">For massive crowds.</p>
-            <div class="package-price" style="font-size: 2rem;">Custom</div>
-            <ul class="package-features">
-              <li><i class="ph ph-check"></i> Multiple Artists</li>
-              <li><i class="ph ph-check"></i> Multi-day Events</li>
-              <li><i class="ph ph-check"></i> Large Screen Projections</li>
-              <li><i class="ph ph-check"></i> Trade Show Booths</li>
-            </ul>
-            <a href="contact.html" class="btn btn-outline">Contact Us</a>
-          </div>
         </div>
       </div>
     </section>
@@ -133,16 +126,19 @@
     <section class="section" style="background-color: var(--surface);">
       <div class="container text-center">
         <h2 class="section-title">Optional Add-ons</h2>
-        <div class="grid grid-3 mt-4" style="text-align: left;">
-          <div style="background: var(--bg); padding: 24px; border: 1px solid var(--border); border-radius: var(--radius);">
+        <div class="grid grid-3 mt-4 packages-grid" style="text-align: left;">
+          <div class="addon-card"
+            style="background: var(--bg); padding: 24px; border: 1px solid var(--border); border-radius: var(--radius);">
             <h4>Color Upgrade</h4>
             <p style="color: var(--text-muted);">Add full color to all sketches. +$100/hr</p>
           </div>
-          <div style="background: var(--bg); padding: 24px; border: 1px solid var(--border); border-radius: var(--radius);">
+          <div class="addon-card"
+            style="background: var(--bg); padding: 24px; border: 1px solid var(--border); border-radius: var(--radius);">
             <h4>Custom Folders</h4>
             <p style="color: var(--text-muted);">Branded protective sleeves for guests. +$2/guest</p>
           </div>
-          <div style="background: var(--bg); padding: 24px; border: 1px solid var(--border); border-radius: var(--radius);">
+          <div class="addon-card"
+            style="background: var(--bg); padding: 24px; border: 1px solid var(--border); border-radius: var(--radius);">
             <h4>Extra Artist</h4>
             <p style="color: var(--text-muted);">Double the volume for large crowds. +$150/hr</p>
           </div>
@@ -156,7 +152,8 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <a href="index.html" class="logo" style="color: #F5F0E8;"><i class="ph ph-pen-nib logo-icon"></i> SketchRush</a>
+          <a href="index.html" class="logo" style="color: #F5F0E8;"><i class="ph ph-pen-nib logo-icon"></i>
+            SketchRush</a>
           <p style="color: #AAAAAA; margin-top: 16px;">Turning moments into lasting art.</p>
         </div>
         <div>
@@ -192,4 +189,5 @@
 
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>

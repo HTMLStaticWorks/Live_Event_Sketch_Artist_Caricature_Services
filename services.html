@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SketchRush | Services</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
 </head>
+
 <body>
   <!-- Navbar -->
   <header class="navbar">
@@ -16,6 +19,7 @@
       <nav class="nav-links">
         <a href="index.html" class="nav-link">Home</a>
         <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
         <a href="services.html" class="nav-link active">Services</a>
         <a href="gallery.html" class="nav-link">Gallery</a>
         <a href="packages.html" class="nav-link">Packages</a>
@@ -42,6 +46,7 @@
     <nav class="drawer-links">
       <a href="index.html" class="nav-link">Home</a>
       <a href="home2.html" class="nav-link">Home 2</a>
+      <a href="about.html" class="nav-link">About</a>
       <a href="services.html" class="nav-link active">Services</a>
       <a href="gallery.html" class="nav-link">Gallery</a>
       <a href="packages.html" class="nav-link">Packages</a>
@@ -66,52 +71,70 @@
         <p class="section-subtitle">Discover the perfect artistic touch for your event.</p>
       </div>
     </section>
-
     <!-- Services Grid -->
     <section class="section">
       <div class="container">
         <div class="grid grid-3">
-          <div class="card">
-            <i class="ph ph-scribble-loop card-icon"></i>
-            <h3 class="card-title">Live Caricature</h3>
-            <p class="card-desc">Humorous, exaggerated portraits that leave your guests laughing and entertained.</p>
-            <p style="font-weight: 600; margin-bottom: 16px;">From $300</p>
-            <a href="booking.html" class="btn btn-outline">Book Now</a>
+          <div class="card" style="padding: 0; overflow: hidden;">
+            <img src="assets/images/service-caricatures.jpg" alt="Live caricature artist drawing at an event"
+              style="width: 100%; aspect-ratio: 4/3; object-fit: cover;">
+            <div style="padding: 24px; display: flex; flex-direction: column; flex: 1; width: 100%;">
+              <h3 class="card-title">Live Caricature</h3>
+              <p class="card-desc">Humorous, exaggerated portraits that leave your guests laughing and entertained.</p>
+              <p style="font-weight: 600; margin-bottom: 16px;">From $300</p>
+              <a href="booking.html" class="btn btn-outline">Book Now</a>
+            </div>
           </div>
-          <div class="card">
-            <i class="ph ph-device-tablet card-icon"></i>
-            <h3 class="card-title">Digital Sketch</h3>
-            <p class="card-desc">Drawn on an iPad. Perfect for corporate events or modern weddings. Sent instantly via email.</p>
-            <p style="font-weight: 600; margin-bottom: 16px;">From $400</p>
-            <a href="booking.html" class="btn btn-outline">Book Now</a>
+          <div class="card" style="padding: 0; overflow: hidden;">
+            <img src="assets/images/service-digitals.jpg" alt="Artist drawing on an iPad tablet"
+              style="width: 100%; aspect-ratio: 4/3; object-fit: cover;">
+            <div style="padding: 24px; display: flex; flex-direction: column; flex: 1; width: 100%;">
+              <h3 class="card-title">Digital Sketch</h3>
+              <p class="card-desc">Drawn on an iPad. Perfect for corporate events or modern weddings. Sent instantly via
+                email.</p>
+              <p style="font-weight: 600; margin-bottom: 16px;">From $400</p>
+              <a href="booking.html" class="btn btn-outline">Book Now</a>
+            </div>
           </div>
-          <div class="card">
-            <i class="ph ph-scroll card-icon"></i>
-            <h3 class="card-title">Paper/Traditional</h3>
-            <p class="card-desc">Classic ink and marker sketches on premium art paper. A tangible keepsake.</p>
-            <p style="font-weight: 600; margin-bottom: 16px;">From $350</p>
-            <a href="booking.html" class="btn btn-outline">Book Now</a>
+          <div class="card" style="padding: 0; overflow: hidden;">
+            <img src="assets/images/service-papers.jpg" alt="Ink pen sketch portrait on art paper"
+              style="width: 100%; aspect-ratio: 4/3; object-fit: cover;">
+            <div style="padding: 24px; display: flex; flex-direction: column; flex: 1; width: 100%;">
+              <h3 class="card-title">Paper/Traditional</h3>
+              <p class="card-desc">Classic ink and marker sketches on premium art paper. A tangible keepsake.</p>
+              <p style="font-weight: 600; margin-bottom: 16px;">From $350</p>
+              <a href="booking.html" class="btn btn-outline">Book Now</a>
+            </div>
           </div>
-          <div class="card">
-            <i class="ph ph-users card-icon"></i>
-            <h3 class="card-title">Couples Portrait</h3>
-            <p class="card-desc">Detailed, romantic sketches for weddings and anniversaries.</p>
-            <p style="font-weight: 600; margin-bottom: 16px;">From $450</p>
-            <a href="booking.html" class="btn btn-outline">Book Now</a>
+          <div class="card" style="padding: 0; overflow: hidden;">
+            <img src="assets/images/service-couples.jpg" alt="Romantic couple portrait sketch"
+              style="width: 100%; aspect-ratio: 4/3; object-fit: cover;">
+            <div style="padding: 24px; display: flex; flex-direction: column; flex: 1; width: 100%;">
+              <h3 class="card-title">Couples Portrait</h3>
+              <p class="card-desc">Detailed, romantic sketches for weddings and anniversaries.</p>
+              <p style="font-weight: 600; margin-bottom: 16px;">From $450</p>
+              <a href="booking.html" class="btn btn-outline">Book Now</a>
+            </div>
           </div>
-          <div class="card">
-            <i class="ph ph-buildings card-icon"></i>
-            <h3 class="card-title">Group Events</h3>
-            <p class="card-desc">Multiple artists for large scale corporate parties or gatherings.</p>
-            <p style="font-weight: 600; margin-bottom: 16px;">Custom Pricing</p>
-            <a href="contact.html" class="btn btn-outline">Contact Us</a>
+          <div class="card" style="padding: 0; overflow: hidden;">
+            <img src="assets/images/service-group.jpg" alt="Multiple artists at a corporate event"
+              style="width: 100%; aspect-ratio: 4/3; object-fit: cover;">
+            <div style="padding: 24px; display: flex; flex-direction: column; flex: 1; width: 100%;">
+              <h3 class="card-title">Group Events</h3>
+              <p class="card-desc">Multiple artists for large scale corporate parties or gatherings.</p>
+              <p style="font-weight: 600; margin-bottom: 16px;">Custom Pricing</p>
+              <a href="contact.html" class="btn btn-outline">Contact Us</a>
+            </div>
           </div>
-          <div class="card">
-            <i class="ph ph-tent card-icon"></i>
-            <h3 class="card-title">Festival Packages</h3>
-            <p class="card-desc">High volume, fast-draw setups for festivals and public events.</p>
-            <p style="font-weight: 600; margin-bottom: 16px;">Custom Pricing</p>
-            <a href="contact.html" class="btn btn-outline">Contact Us</a>
+          <div class="card" style="padding: 0; overflow: hidden;">
+            <img src="assets/images/service-festival.jpg" alt="Artist sketching at an outdoor festival"
+              style="width: 100%; aspect-ratio: 4/3; object-fit: cover;">
+            <div style="padding: 24px; display: flex; flex-direction: column; flex: 1; width: 100%;">
+              <h3 class="card-title">Festival Packages</h3>
+              <p class="card-desc">High volume, fast-draw setups for festivals and public events.</p>
+              <p style="font-weight: 600; margin-bottom: 16px;">Custom Pricing</p>
+              <a href="contact.html" class="btn btn-outline">Contact Us</a>
+            </div>
           </div>
         </div>
       </div>
@@ -121,19 +144,21 @@
     <section class="section" style="background-color: var(--surface);">
       <div class="container text-center">
         <h2 class="section-title">Digital vs Paper</h2>
-        <div class="grid grid-2 mt-4" style="text-align: left;">
-          <div style="background: var(--bg); padding: 32px; border: 2px solid var(--border); border-radius: var(--radius);">
+        <div class="grid grid-2 mt-4 digital-paper-grid" style="text-align: center;">
+          <div class="vs-card"
+            style="background: var(--bg); padding: 32px; border: 2px solid var(--border); border-radius: var(--radius);">
             <h3><i class="ph ph-device-tablet" style="color: var(--accent);"></i> Digital Sketching</h3>
-            <ul style="margin-top: 16px; display: flex; flex-direction: column; gap: 8px;">
+            <ul style="margin-top: 16px; display: flex; flex-direction: column; gap: 8px; align-items: center;">
               <li>- Perfect for screen mirroring</li>
               <li>- Instant email/SMS delivery</li>
               <li>- Easy brand integration/logos</li>
               <li>- High definition digital file</li>
             </ul>
           </div>
-          <div style="background: var(--bg); padding: 32px; border: 2px solid var(--border); border-radius: var(--radius);">
+          <div class="vs-card"
+            style="background: var(--bg); padding: 32px; border: 2px solid var(--border); border-radius: var(--radius);">
             <h3><i class="ph ph-scroll" style="color: var(--accent);"></i> Paper Sketching</h3>
-            <ul style="margin-top: 16px; display: flex; flex-direction: column; gap: 8px;">
+            <ul style="margin-top: 16px; display: flex; flex-direction: column; gap: 8px; align-items: center;">
               <li>- Tangible, authentic art piece</li>
               <li>- Watch the ink dry live</li>
               <li>- Premium, artisan feel</li>
@@ -147,15 +172,18 @@
     <!-- FAQ -->
     <section class="section">
       <div class="container">
-        <h2 class="section-title">FAQ</h2>
-        <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px;">
-          <div style="border: 2px solid var(--border); border-radius: var(--radius); padding: 24px;">
+        <h2 class="section-title" style="text-align: center;">FAQ</h2>
+        <div
+          style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; text-align: center;">
+          <div class="faq-item" style="border: 2px solid var(--border); border-radius: var(--radius); padding: 24px;">
             <h4 style="margin-bottom: 8px;">How many faces can you draw per hour?</h4>
-            <p style="color: var(--text-muted);">Depending on the detail, our artists average 12-15 faces per hour in black and white, or 8-10 in color.</p>
+            <p style="color: var(--text-muted);">Depending on the detail, our artists average 12-15 faces per hour in
+              black and white, or 8-10 in color.</p>
           </div>
-          <div style="border: 2px solid var(--border); border-radius: var(--radius); padding: 24px;">
+          <div class="faq-item" style="border: 2px solid var(--border); border-radius: var(--radius); padding: 24px;">
             <h4 style="margin-bottom: 8px;">Do you travel for events?</h4>
-            <p style="color: var(--text-muted);">Yes! We travel locally and nationally. Travel fees may apply outside our standard radius.</p>
+            <p style="color: var(--text-muted);">Yes! We travel locally and nationally. Travel fees may apply outside
+              our standard radius.</p>
           </div>
         </div>
       </div>
@@ -167,7 +195,8 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <a href="index.html" class="logo" style="color: #F5F0E8;"><i class="ph ph-pen-nib logo-icon"></i> SketchRush</a>
+          <a href="index.html" class="logo" style="color: #F5F0E8;"><i class="ph ph-pen-nib logo-icon"></i>
+            SketchRush</a>
           <p style="color: #AAAAAA; margin-top: 16px;">Turning moments into lasting art.</p>
         </div>
         <div>
@@ -203,4 +232,5 @@
 
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>

@@ -119,4 +119,21 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // Password Visibility Toggle
+  const passwordToggles = document.querySelectorAll('.password-toggle');
+  passwordToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const input = toggle.parentElement.querySelector('input');
+      const icon = toggle.querySelector('i');
+      
+      if (input.type === 'password') {
+        input.type = 'text';
+        icon.classList.replace('ph-eye', 'ph-eye-slash');
+      } else {
+        input.type = 'password';
+        icon.classList.replace('ph-eye-slash', 'ph-eye');
+      }
+    });
+  });
 });
