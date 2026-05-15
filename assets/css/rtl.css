@@ -1,10 +1,3 @@
-/* RTL Overrides for SketchRush */
-
-html[dir="rtl"] {
-  /* Logical properties handle most of it, but specifying edge cases here */
-}
-
-/* Drawer logic for RTL */
 html[dir="rtl"] .drawer {
   right: auto;
   left: -100%;
@@ -14,10 +7,6 @@ html[dir="rtl"] .drawer {
 
 html[dir="rtl"] .drawer.active {
   left: 0;
-}
-
-html[dir="rtl"] .hero-split {
-  /* No change needed if we use CSS Grid without explicit left/right placement */
 }
 
 html[dir="rtl"] .auth-divider::before {
@@ -43,9 +32,10 @@ html[dir="rtl"] .package-card:hover {
   box-shadow: -2px 2px 0px var(--primary);
 }
 
-html[dir="rtl"] :root {
+[dir="rtl"] {
   --shadow: -4px 4px 0px var(--primary);
 }
-html[dir="rtl"] [data-theme="dark"] {
-  --shadow: -4px 4px 0px rgba(245,240,232,0.15);
+
+[dir="rtl"][data-theme="dark"] {
+  --shadow: -4px 4px 0px rgba(245, 240, 232, 0.15);
 }
