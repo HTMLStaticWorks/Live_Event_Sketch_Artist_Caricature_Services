@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SketchRush | 404</title>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <style>
+    .sketch-404 {
+      font-size: clamp(6rem, 15vw, 12rem);
+      font-family: var(--font-head);
+      color: transparent;
+      -webkit-text-stroke: 2px var(--text);
+      display: inline-block;
+      position: relative;
+      margin-bottom: 24px;
+    }
+    .sketch-404::after {
+      content: '404';
+      position: absolute;
+      left: 6px;
+      top: 6px;
+      color: var(--accent);
+      z-index: -1;
+      opacity: 0.3;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="logo"><i class="ph ph-pen-nib logo-icon"></i> SketchRush</a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="packages.html" class="nav-link">Packages</a>
+        <a href="booking.html" class="nav-link">Book Now</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle"><i class="ph ph-moon"></i></button>
+        <button class="icon-btn rtl-toggle"><i class="ph ph-arrows-left-right"></i></button>
+        <a href="login.html" class="btn btn-outline">Login</a>
+      </div>
+      <button class="hamburger"><i class="ph ph-list"></i></button>
+    </div>
+  </header>
+
+  <!-- Drawer -->
+  <div class="drawer-overlay"></div>
+  <aside class="drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="logo"><i class="ph ph-pen-nib logo-icon"></i> SketchRush</a>
+      <button class="icon-btn close-drawer"><i class="ph ph-x"></i></button>
+    </div>
+    <nav class="drawer-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="home2.html" class="nav-link">Home 2</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="packages.html" class="nav-link">Packages</a>
+      <a href="booking.html" class="nav-link">Book Now</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="drawer-actions">
+      <button class="icon-btn theme-toggle"><i class="ph ph-moon"></i></button>
+      <button class="icon-btn rtl-toggle"><i class="ph ph-arrows-left-right"></i></button>
+    </div>
+    <div style="margin-top: 16px; text-align: center;">
+      <a href="login.html" class="btn btn-primary" style="width: 100%;">Login</a>
+    </div>
+  </aside>
+
+  <main style="padding-top: 80px; min-height: 80vh; display: flex; align-items: center; justify-content: center; text-align: center;">
+    <div class="container">
+      <div class="sketch-404">404</div>
+      <h2 style="margin-bottom: 16px; font-family: var(--font-head);">Looks like this page ran off the canvas.</h2>
+      <p style="color: var(--text-muted); margin-bottom: 32px;">The page you are looking for doesn't exist or has been moved.</p>
+      <a href="index.html" class="btn btn-primary"><i class="ph ph-arrow-left"></i> Back to Home</a>
+    </div>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

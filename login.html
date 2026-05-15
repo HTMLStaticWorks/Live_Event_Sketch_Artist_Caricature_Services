@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SketchRush | Login</title>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body style="overflow: hidden;">
+
+  <!-- No theme toggle, centered layout, no scroll -->
+  <main class="auth-page">
+    <div class="auth-card">
+      <div style="margin-bottom: 32px;">
+        <i class="ph ph-pen-nib" style="font-size: 3rem; color: var(--accent);"></i>
+        <h2 style="font-family: var(--font-head); margin-top: 16px;">Welcome Back</h2>
+        <p style="color: var(--text-muted);">Sign in to manage your bookings.</p>
+      </div>
+
+      <form action="#" method="POST" novalidate>
+        <div class="form-group">
+          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+          <div class="error-message">Valid email is required.</div>
+        </div>
+        <div class="form-group">
+          <input type="password" name="password" class="form-control" placeholder="Password" required>
+          <div class="error-message">Password is required.</div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+      </form>
+
+      <div class="auth-divider">or</div>
+
+      <button class="social-btn">
+        <i class="ph ph-google-logo" style="color: #EA4335; font-size: 1.25rem;"></i> Continue with Google
+      </button>
+      <button class="social-btn">
+        <i class="ph ph-envelope" style="color: var(--text); font-size: 1.25rem;"></i> Continue with Email
+      </button>
+
+      <p style="margin-top: 24px; color: var(--text-muted);">
+        Don't have an account? <a href="register.html" style="color: var(--accent); font-weight: 600;">Register here</a>
+      </p>
+    </div>
+  </main>
+
+  <script src="assets/js/booking.js"></script>
+</body>
+</html>

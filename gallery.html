@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SketchRush | Gallery</title>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="logo"><i class="ph ph-pen-nib logo-icon"></i> SketchRush</a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="packages.html" class="nav-link">Packages</a>
+        <a href="booking.html" class="nav-link">Book Now</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle"><i class="ph ph-moon"></i></button>
+        <button class="icon-btn rtl-toggle"><i class="ph ph-arrows-left-right"></i></button>
+        <a href="login.html" class="btn btn-outline">Login</a>
+      </div>
+      <button class="hamburger"><i class="ph ph-list"></i></button>
+    </div>
+  </header>
+
+  <!-- Drawer -->
+  <div class="drawer-overlay"></div>
+  <aside class="drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="logo"><i class="ph ph-pen-nib logo-icon"></i> SketchRush</a>
+      <button class="icon-btn close-drawer"><i class="ph ph-x"></i></button>
+    </div>
+    <nav class="drawer-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="home2.html" class="nav-link">Home 2</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="gallery.html" class="nav-link active">Gallery</a>
+      <a href="packages.html" class="nav-link">Packages</a>
+      <a href="booking.html" class="nav-link">Book Now</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="drawer-actions">
+      <button class="icon-btn theme-toggle"><i class="ph ph-moon"></i></button>
+      <button class="icon-btn rtl-toggle"><i class="ph ph-arrows-left-right"></i></button>
+    </div>
+    <div style="margin-top: 16px; text-align: center;">
+      <a href="login.html" class="btn btn-primary" style="width: 100%;">Login</a>
+    </div>
+  </aside>
+
+  <main style="padding-top: 80px;">
+    <!-- Page Header -->
+    <section class="section" style="background-color: var(--surface);">
+      <div class="container text-center">
+        <h1 class="section-title">Portfolio Gallery</h1>
+        <p class="section-subtitle">A collection of our live sketching and caricatures from events worldwide.</p>
+      </div>
+    </section>
+
+    <!-- Gallery Full -->
+    <section class="section">
+      <div class="container">
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="weddings">Weddings</button>
+          <button class="filter-btn" data-filter="corporate">Corporate</button>
+          <button class="filter-btn" data-filter="parties">Parties</button>
+          <button class="filter-btn" data-filter="festivals">Festivals</button>
+          <button class="filter-btn" data-filter="caricatures">Caricatures</button>
+          <button class="filter-btn" data-filter="portraits">Portraits</button>
+        </div>
+        <div class="gallery-grid">
+          <!-- Item 1 -->
+          <div class="gallery-item" data-category="weddings">
+            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80" alt="Wedding Couple Sketch" class="gallery-img">
+            <div class="gallery-overlay"><h4>Wedding Portrait</h4><p>Digital</p></div>
+          </div>
+          <!-- Item 2 -->
+          <div class="gallery-item" data-category="corporate">
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80" alt="Corporate Event Sketch" class="gallery-img">
+            <div class="gallery-overlay"><h4>Corporate Event</h4><p>Paper</p></div>
+          </div>
+          <!-- Item 3 -->
+          <div class="gallery-item" data-category="weddings">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80" alt="Wedding Group Sketch" class="gallery-img">
+            <div class="gallery-overlay"><h4>Wedding Party</h4><p>Digital</p></div>
+          </div>
+          <!-- Item 4 -->
+          <div class="gallery-item" data-category="parties">
+            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=80" alt="Party Sketch" class="gallery-img">
+            <div class="gallery-overlay"><h4>Birthday Party</h4><p>Paper</p></div>
+          </div>
+          <!-- Item 5 -->
+          <div class="gallery-item" data-category="festivals">
+            <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=600&q=80" alt="Festival Sketch" class="gallery-img">
+            <div class="gallery-overlay"><h4>Music Festival</h4><p>Digital</p></div>
+          </div>
+          <!-- Item 6 -->
+          <div class="gallery-item" data-category="caricatures">
+            <img src="https://images.unsplash.com/photo-1525926477800-7a3afafbeaf4?auto=format&fit=crop&w=600&q=80" alt="Caricature" class="gallery-img">
+            <div class="gallery-overlay"><h4>Funny Caricature</h4><p>Paper</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo" style="color: #F5F0E8;"><i class="ph ph-pen-nib logo-icon"></i> SketchRush</a>
+          <p style="color: #AAAAAA; margin-top: 16px;">Turning moments into lasting art.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="packages.html">Packages</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <div class="footer-links">
+            <a href="services.html">Live Caricature</a>
+            <a href="services.html">Digital Sketches</a>
+            <a href="services.html">Weddings</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Connect</h4>
+          <div class="social-icons">
+            <a href="#"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#"><i class="ph ph-twitter-logo"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 SketchRush. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close"><i class="ph ph-x"></i></button>
+    <img src="" alt="Lightbox View" class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
