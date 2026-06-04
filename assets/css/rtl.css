@@ -39,3 +39,13 @@ html[dir="rtl"] .package-card:hover {
 [dir="rtl"][data-theme="dark"] {
   --shadow: -4px 4px 0px rgba(245, 240, 232, 0.15);
 }
+
+html[dir="rtl"] .password-toggle {
+  right: auto;
+  left: 12px;
+}
+
+html[dir="rtl"] .password-wrapper .form-control {
+  padding-right: calc(var(--spacing) * 1.5);
+  padding-left: 45px;
+}
